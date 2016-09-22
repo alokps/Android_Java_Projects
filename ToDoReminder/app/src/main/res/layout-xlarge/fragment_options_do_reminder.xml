@@ -1,0 +1,232 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fadingEdge="horizontal"
+    android:orientation="horizontal" >
+
+    <TextView
+        android:id="@+id/ReminderText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="2dp"
+        android:text="@string/Reminder"
+        android:textStyle="bold"
+        android:textSize="15sp" />
+    
+    <TableRow
+        android:id="@+id/emptytable1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="5dp"
+        android:paddingTop="5dp" />
+
+    <EditText
+        android:id="@+id/ReminderTextView"
+        style="@style/TextFeild"
+        android:background="@drawable/edittext_selector"
+        android:ems="10" />
+
+    <TableRow
+        android:id="@+id/Notestablerow"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="10dp"
+        android:paddingTop="10dp" >
+
+        <TextView
+            android:id="@+id/NoteTV"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:padding="2dp"
+            android:text="@string/Notes"
+            android:textStyle="bold"
+            android:textSize="15sp" />
+    </TableRow>
+
+    <ScrollView
+        android:id="@+id/AlarmScrollView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:ignore="UselessParent" >
+
+        <EditText
+            android:id="@+id/NoteEditText"
+            style="@style/TextFeild"
+            android:layout_width="match_parent"
+            android:lines="4"
+            android:gravity="top"
+            android:inputType="textMultiLine"
+            android:background="@drawable/edittext_selector" >
+
+        </EditText>
+    </ScrollView>
+
+    <TableRow
+        android:id="@+id/tablerowforAlarm"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="10dp"
+        android:paddingTop="10dp" >
+
+        <TextView
+            android:id="@+id/AlarmTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="2dp"
+            android:textStyle="bold"
+            android:text="@string/Alarm"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/AlarmDateTV"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textStyle="bold"
+            android:padding="2dp"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/AlarmTimeTV"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textStyle="bold"
+            android:padding="2dp"
+            android:textSize="15sp" />
+
+        <RadioButton
+            android:id="@+id/AlarmButton"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:background="@drawable/rd"
+            android:contentDescription="@string/Alarm"
+            android:minHeight="1dip" />
+    </TableRow>
+
+    <TableRow
+        android:id="@+id/Alarmoptionstextrow"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="10dp"
+        android:paddingTop="10dp" >
+
+        <TextView
+            android:id="@+id/Alarmoptionstextview"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:padding="2dp"
+            android:textStyle="bold"
+            android:text="@string/AlarmRepeat"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/repeatAlarmText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:layout_weight="1"
+            android:text="" />
+    </TableRow>
+
+    <TableRow
+        android:id="@+id/Alarmoptionsrow"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="10dp"
+        android:paddingTop="10dp" >
+
+        <Button
+            android:id="@+id/nonebutton"
+            android:text="@string/None"
+            style="@style/button"
+            android:background="@drawable/button_selector"
+            tools:ignore="SmallSp" />
+
+        <Button
+            android:id="@+id/dailybutton"
+            style="@style/button"
+            android:text="@string/Daily"
+            android:background="@drawable/button_selector"
+            tools:ignore="SmallSp" />
+
+        <Button
+            android:id="@+id/monthlybutton"
+            style="@style/button"
+            android:text="@string/Monthly"
+            android:background="@drawable/button_selector"
+            tools:ignore="SmallSp" />
+
+        <Button
+            android:id="@+id/yearlybutton"
+            style="@style/button"
+            android:text="@string/Yearly"
+            android:background="@drawable/button_selector"
+            tools:ignore="SmallSp" />
+    </TableRow>
+
+   
+    <TableRow
+        android:id="@+id/Prioritytablerowtext"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="10dp"
+        android:paddingTop="10dp" >
+
+        <TextView
+            android:id="@+id/PriorityTV"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:padding="2dp"
+            android:textStyle="bold"
+            android:text="@string/Priority" />
+        
+        <TextView
+            android:id="@+id/PriorityText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textStyle="bold"
+            android:text="" />
+        
+    </TableRow>
+
+    <TableRow
+        android:id="@+id/Prioritytablerow"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" 
+        android:paddingBottom="10dp"
+        android:paddingTop="10dp" >
+
+        <Button
+            android:id="@+id/PurpleRadioButton"
+            style="@style/button"
+            android:text="@string/Priority_None"
+            android:background="@drawable/button_selector"/>
+
+        <Button
+            android:id="@+id/RedRadioButton"
+            style="@style/button"
+            android:text="@string/Priority_Red"
+            android:background="@drawable/button_selector"/>
+
+        <Button
+            android:id="@+id/BlueRadioButton"
+            style="@style/button"
+            android:text="@string/Priority_Blue"
+            android:background="@drawable/button_selector"/>
+
+        <Button
+            android:id="@+id/GreenRadioButton"
+            style="@style/button"
+            android:text="@string/Priority_Green"
+            android:background="@drawable/button_selector" />
+    </TableRow>
+
+</TableLayout>

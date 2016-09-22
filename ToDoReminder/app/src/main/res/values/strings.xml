@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">ToDoReminders</string>
+    <string name="Notes">Notes</string>
+    <string name="Demo">Demo</string>
+    <string name="Date">Date</string>
+    <string name="Time">Time</string>
+    <string name="Reminders">Reminders</string>
+    <string name="Alarm">Alarm</string>
+    <string name="Priority">Priority</string>
+    <string name="Add">Add</string>
+    <string name="Del">DEL</string>
+    <string name="Delete">DELETE</string>
+    <string name="Save">SAVE</string>
+    <string name="OK">OK</string>
+    <string name="Snooze">Snooze</string>
+    <string name="Daily">Daily</string>
+    <string name="Weekdays">Weekdays</string>
+    <string name="None">None</string>
+    <string name="Monthly">Monthly</string>
+    <string name="Yearly">Yearly</string>
+    <string name="AlarmRepeat">AlarmRepeat</string>
+    <string name="action_settings">Settings</string>
+    <string name="Reminder">ReminderText</string>
+    <string name="Priority_Red">"!!!!"</string>
+    <string name="Priority_Blue">"!!!"</string>
+    <string name="Priority_Orange">"!!"</string>
+    <string name="Priority_Green">"!"</string>
+    <string name="Priority_None">"None"</string>
+    <string name="Done">DONE</string>
+    <string name="SetDate">Set date</string>
+    <string name="SetTime">Set time</string>
+    <string name="About">About</string>
+    <string name="title_activity_do_notes_fragment">DoNotesFragment</string>
+    <string name="title_activity_alarm_dialog">AlarmDialog</string>
+    <string name="rate">Rate this App</string>
+
+</resources>

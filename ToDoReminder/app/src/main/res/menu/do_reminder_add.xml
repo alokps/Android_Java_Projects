@@ -1,0 +1,18 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.alokpotrapalli.donotes.DoNotes" >
+
+    <item
+        android:id="@+id/add_symbol_label"
+        android:icon="@drawable/add_small"
+        android:title="@string/Add"
+        android:showAsAction="always"/>
+    
+    <item
+        android:id="@+id/action_settings"
+        android:icon="@drawable/settings_icon"
+        android:title="@string/action_settings"
+        android:showAsAction="always"/>
+
+</menu>
