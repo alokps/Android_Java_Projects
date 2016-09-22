@@ -4,7 +4,7 @@ ToDoReminder is an android app that allows building a todo list and basic todo i
 
 Submitted by: Alok
 
-Time spent: 80 hours spent in total
+Time spent: 40 hours spent in total
 
 ## User Stories
 
