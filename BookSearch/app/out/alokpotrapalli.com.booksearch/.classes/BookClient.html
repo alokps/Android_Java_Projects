@@ -1,0 +1,135 @@
+
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html id="htmlId">
+<head>
+  <title>Coverage Report :: BookClient</title>
+  <style type="text/css">
+    @import "../../.css/coverage.css";
+  </style>
+</head>
+
+<body>
+<div class="header"></div>
+
+<div class="content">
+<div class="breadCrumbs">
+    [ <a href="../../index.html">all classes</a> ]
+    [ <a href="../index.html">alokpotrapalli.com.booksearch</a> ]
+</div>
+
+<h1>Coverage Summary for Class: BookClient (alokpotrapalli.com.booksearch)</h1>
+
+<table class="coverageStats">
+<tr>
+  <th class="name">Class</th>
+<th class="coverageStat 
+">
+  Class, %
+</th>
+<th class="coverageStat 
+">
+  Method, %
+</th>
+<th class="coverageStat 
+">
+  Line, %
+</th>
+</tr>
+<tr>
+  <td class="name">BookClient</td>
+<td class="coverageStat">
+  <span class="percent">
+    0%
+  </span>
+  <span class="absValue">
+    (0/ 1)
+  </span>
+</td>
+<td class="coverageStat">
+  <span class="percent">
+    0%
+  </span>
+  <span class="absValue">
+    (0/ 5)
+  </span>
+</td>
+<td class="coverageStat">
+  <span class="percent">
+    0%
+  </span>
+  <span class="absValue">
+    (0/ 14)
+  </span>
+</td>
+</tr>
+
+</table>
+
+<br/>
+<br/>
+
+
+<div class="sourceCode"><i>1</i>&nbsp;package alokpotrapalli.com.booksearch;
+<i>2</i>&nbsp;
+<i>3</i>&nbsp;import com.loopj.android.http.AsyncHttpClient;
+<i>4</i>&nbsp;import com.loopj.android.http.JsonHttpResponseHandler;
+<i>5</i>&nbsp;
+<i>6</i>&nbsp;import java.io.UnsupportedEncodingException;
+<i>7</i>&nbsp;import java.net.URLEncoder;
+<i>8</i>&nbsp;
+<i>9</i>&nbsp;/**
+<i>10</i>&nbsp; * Created by alokps on 9/4/15.
+<i>11</i>&nbsp; *
+<i>12</i>&nbsp; * Lets generate the Java Class, that will act as a Open Library
+<i>13</i>&nbsp; * API client for sending out network request to specific endpoints.
+<i>14</i>&nbsp; *
+<i>15</i>&nbsp; */
+<i>16</i>&nbsp;public class BookClient {
+<i>17</i>&nbsp;
+<b class="nc"><i>18</i>&nbsp;    private static final String TAG = BookClient.class.getSimpleName();</b>
+<i>19</i>&nbsp;    private static final String API_BASE_URL = &quot;https://openlibrary.org/&quot;;
+<i>20</i>&nbsp;    private AsyncHttpClient client;
+<i>21</i>&nbsp;
+<b class="nc"><i>22</i>&nbsp;    public BookClient(){</b>
+<b class="nc"><i>23</i>&nbsp;        this.client = new AsyncHttpClient();</b>
+<b class="nc"><i>24</i>&nbsp;    }</b>
+<i>25</i>&nbsp;
+<i>26</i>&nbsp;    private String getApiUrl(String relativeUrl){
+<b class="nc"><i>27</i>&nbsp;        return API_BASE_URL + relativeUrl;</b>
+<i>28</i>&nbsp;    }
+<i>29</i>&nbsp;
+<i>30</i>&nbsp;    //Method for accessing the search API
+<i>31</i>&nbsp;    public void getBooks(final String query, JsonHttpResponseHandler handler){
+<i>32</i>&nbsp;
+<i>33</i>&nbsp;        try {
+<i>34</i>&nbsp;
+<b class="nc"><i>35</i>&nbsp;            String url = getApiUrl(&quot;search.json?q=&quot;);</b>
+<b class="nc"><i>36</i>&nbsp;            client.get(url + URLEncoder.encode(query,&quot;utf-8&quot;),handler);</b>
+<i>37</i>&nbsp;
+<b class="nc"><i>38</i>&nbsp;        }catch (UnsupportedEncodingException e){</b>
+<i>39</i>&nbsp;
+<b class="nc"><i>40</i>&nbsp;            e.printStackTrace();</b>
+<b class="nc"><i>41</i>&nbsp;        }</b>
+<i>42</i>&nbsp;
+<b class="nc"><i>43</i>&nbsp;    }</b>
+<i>44</i>&nbsp;
+<i>45</i>&nbsp;    //Get the Publisher and number of pages in the book
+<i>46</i>&nbsp;    public void getExtraBookDetails(String openLibraryId, JsonHttpResponseHandler handler){
+<b class="nc"><i>47</i>&nbsp;        String url = getApiUrl(&quot;books/&quot;);</b>
+<b class="nc"><i>48</i>&nbsp;        client.get(url + openLibraryId + &quot;.json&quot;, handler);</b>
+<b class="nc"><i>49</i>&nbsp;    }</b>
+<i>50</i>&nbsp;
+<i>51</i>&nbsp;
+<i>52</i>&nbsp;}
+</div>
+</div>
+
+<div class="footer">
+    
+    <div style="float:right;">generated on 2015-09-07 14:55</div>
+</div>
+</body>
+</html>
