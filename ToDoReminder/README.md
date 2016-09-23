@@ -27,9 +27,9 @@ The following **additional** features are implemented:
 
 * [X] Preferences screen to select Ring Tone, Vibrate Mode and Date/Time Format.
 * [X] Added Alarm Dialog with Snooze and OK Feature.
-* [X]Added Sqlite Database to presist items.
-* [X]Used Shared preferences to presist local items.
-* [X]Used Pending Intents, Wakelocks and Broadcast receivers to implement Alarm Functionality. 
+* [X] Added Sqlite Database to presist items.
+* [X] Used Shared preferences to presist local items.
+* [X] Used Pending Intents, Wakelocks and Broadcast receivers to implement Alarm Functionality. 
 
 ## Video Walkthrough 
 
