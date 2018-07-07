@@ -1,2 +1,2 @@
-# Android_Java_Projects
-This Repo will be used to store all the Java and Android Project Files-JavaAndroidProject.
+# Android_Projects
+List of all Android things and projects.
