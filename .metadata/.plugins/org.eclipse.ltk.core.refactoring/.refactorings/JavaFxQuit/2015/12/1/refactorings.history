@@ -1,4 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<session version="1.0">
-<refactoring comment="Rename compilation unit &apos;alokps.package-info.java&apos; to &apos;JavaFxQuit.java&apos;&#x0A;- Original project: &apos;JavaFxQuit&apos;&#x0A;- Original element: &apos;alokps.package-info.java&apos;&#x0A;- Renamed element: &apos;alokps.JavaFxQuit.java&apos;" description="Rename compilation unit &apos;package-info.java&apos;" flags="2" id="org.eclipse.jdt.ui.rename.compilationunit" input="/src&lt;alokps{package-info.java" name="JavaFxQuit.java" references="false" stamp="1451417696628" version="1.0"/>
-</session>
